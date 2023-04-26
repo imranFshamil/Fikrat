@@ -1,0 +1,570 @@
+@charset "utf-8";
+
+/*
+
+Theme Name: Moria Health Tourism Website Template
+Theme URL: https://moria.onixes.com/
+Author: Obada Qawwas
+Author URL: https://www.onyxdev.net/
+Version: 1.0.0
+
+*/
+
+/************************************************************
+
+    Mobiles landscape
+
+*************************************************************/
+@media only screen and (orientation: landscape) {
+    /* Main banner
+    *************************************/
+    .banner-area.image .img-container:not(.full-height),
+    .banner-area.image .img-container:not(.full-height) > [onyx-slider] {
+        height: 360px;
+        min-height: 50vh;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    /* Main banner
+    *************************************/
+    .banner-area.image .img-container:not(.full-height),
+    .banner-area.image .img-container:not(.full-height) > [onyx-slider] {
+        height: 220px;
+        min-height: 20vh;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+    main.error-404 {
+        height: auto;
+    }
+}
+
+/************************************************************
+
+    Mobiles landscape
+
+*************************************************************/
+@media only screen and (min-width: 576px) {
+    /* Bootstrap helpers
+    *************************************/
+    .g-sm-6,
+    .gx-sm-6 {
+        --bs-gutter-x: 4rem;
+    }
+    .g-sm-6,
+    .gy-sm-6 {
+        --bs-gutter-y: 4rem;
+    }
+
+    /* BG's
+    *************************************/
+    .grey-bg-left-effect:after {
+        right: 65%;
+    }
+    .watermark-logo-bg:before {
+        background-position: calc(100% + 50px) 0;
+        background-size: 50%;
+    }
+
+    /* Main banner
+    *************************************/
+    .banner-area.image .img-container.full-height {
+        min-height: calc(100vh - 80px);
+    }
+
+    /* Share
+    *************************************/
+    .share-post {
+        flex-direction: row;
+        align-items: center;
+    }
+    .share-post .title {
+        margin: 0 auto 0 0;
+    }
+
+    /* Comments
+    *************************************/
+    .comments ul {
+        margin-bottom: 4rem;
+    }
+    .comments li {
+        display: flex;
+        flex-direction: row;
+    }
+    .comments li:not(:last-child) {
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+    .comments li .details {
+        margin: 0 2rem 0 0;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .comments .submit-container {
+        flex-direction: row;
+        align-items: center;
+    }
+    .comments .submit-container button {
+        margin-right: 3rem;
+    }
+    .comments form .note {
+        margin: 0 0 0 auto;
+    }
+
+    /* Forms
+    *************************************/
+    form button[type='submit'] {
+        width: auto;
+    }
+
+    /* Design your trip
+    *************************************/
+    .trip-design-completion {
+        margin: -20px -20px 45px -20px;
+    }
+    .trip-design-completion-step:not(:last-child):after {
+        content: '';
+        position: absolute;
+        top: 20px;
+        width: calc(100% + 40px);
+        height: 2px;
+        background-color: var(--primary-accent);
+        z-index: -1;
+    }
+    .trip-design-completion-step {
+        position: relative;
+        display: inline-block;
+        margin: 20px;
+        flex: 0 0 calc(25% - 40px);
+        max-width: calc(25% - 40px);
+    }
+
+    /* Blog
+    *************************************/
+    ul.categories li {
+        flex-basis: auto;
+    }
+}
+
+/************************************************************
+
+    Small sizes
+
+*************************************************************/
+@media only screen and (min-width: 768px) {
+    /* Bootstrap helpers
+    *************************************/
+    .g-md-6,
+    .gx-md-6 {
+        --bs-gutter-x: 4rem;
+    }
+    .g-md-6,
+    .gy-md-6 {
+        --bs-gutter-y: 4rem;
+    }
+
+    /* Watermark
+    *************************************/
+    .main[class*='watermark-']:before {
+        background-position: calc(100% + 50px) -20px;
+        background-size: 60%;
+    }
+
+    /* Wrapper & Spacings
+    *************************************/
+    .cols-md-mb > [class*='col-']:not(:last-child) {
+        margin-bottom: initial;
+    }
+
+    /* General
+    *************************************/
+    .reverse-cols-md {
+        flex-direction: initial;
+    }
+
+    /* Main banner
+    *************************************/
+    .banner-area.simple .title {
+        max-width: 80%;
+    }
+    .banner-area.simple .brief {
+        margin-top: 0.375rem;
+    }
+
+    /* Footer
+    *************************************/
+    footer > .row:last-child {
+        position: relative;
+    }
+    footer > .row:last-child:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        top: 0;
+        right: -999px;
+        left: -999px;
+        background-color: var(--border-color);
+    }
+
+    footer .row.copyrights > :first-child {
+        text-align: initial;
+    }
+    footer .row.copyrights > :first-child a {
+        margin-top: initial;
+    }
+    footer .copyrights .onyx-logo {
+        margin-top: initial;
+        text-align: right;
+    }
+
+    /* Categories
+    *************************************/
+    .section-title .title {
+        font-size: 2.5rem;
+    }
+    .section-title h3.title {
+        font-size: 24px;
+    }
+    .medical-cats .content {
+        padding-left: 50px;
+    }
+
+    /* Content area
+    *************************************/
+    .content-area .img-container.small-right {
+        text-align: initial;
+        max-width: 160px;
+        height: auto;
+        margin: 0 0 0 auto;
+    }
+    .content-area.style-1 .content {
+        margin-left: 80px;
+    }
+
+    /* Contact details
+    *************************************/
+    .contact-details {
+        margin-bottom: initial;
+    }
+
+    /* Instagram
+    *************************************/
+    .instagram [class^='col-']:nth-child(even) .item {
+        margin-top: var(--bs-gutter-y);
+    }
+
+    /* Blog
+    *************************************/
+    .pagination {
+        margin-top: 4rem;
+    }
+
+    /* 404
+    *************************************/
+    main.error-404 .banner-area.simple {
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    /* Main banner
+    *************************************/
+    .banner-area.image .img-container:not(.full-height),
+    .banner-area.image .img-container:not(.full-height) > [onyx-slider] {
+        height: 360px;
+        min-height: 35vh;
+    }
+}
+
+/************************************************************
+
+    Medium sizes / Start mobile specific styles
+
+*************************************************************/
+@media only screen and (min-width: 992px) {
+    :root {
+        --bg-effect-height: 280px;
+        --container-h-space: 11%;
+        --section-v-space: 80px;
+    }
+
+    /* Bootstrap helpers
+    *************************************/
+    .g-lg-6,
+    .gx-lg-6 {
+        --bs-gutter-x: 4rem;
+    }
+    .g-lg-6,
+    .gy-lg-6 {
+        --bs-gutter-y: 4rem;
+    }
+
+    /* Wrapper & Spacings
+    *************************************/
+    .cols-lg-mb > [class*='col-']:not(:last-child) {
+        margin-bottom: initial;
+    }
+
+    /* Main banner
+    *************************************/
+    .banner-area.image .img-container {
+        margin-top: 40px;
+    }
+    .banner-area.image .content {
+        margin: 0 -12rem 0 0;
+    }
+    .banner-area.image .title {
+        font-size: 2.25rem;
+    }
+    .banner-area.image.slider .content {
+        margin-top: auto;
+    }
+
+    /*** Overlay ***/
+    .banner-area.image .img-container.overlay:before {
+        position: relative;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0.75rem;
+        bottom: 0;
+        left: 0.75rem;
+        z-index: 3;
+        background: rgba(2, 25, 84, 0.4);
+        background: linear-gradient(
+            to right,
+            rgba(2, 25, 84, 0.4) 0%,
+            rgba(2, 25, 84, 0.05) 40%,
+            rgba(2, 25, 84, 0.1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#021954', endColorstr='#021954', GradientType=1 );
+    }
+
+    /* BG's
+    *************************************/
+    .bg-effect-primary:before,
+    .bg-effect-secondary:before {
+        right: 5.5%;
+    }
+
+    /* Content area
+    *************************************/
+    .content-area.style-1 .content {
+        margin-top: 120px;
+    }
+    .content-area .content {
+        max-width: 70%;
+    }
+    .content-area > .title,
+    .content-area .content .title {
+        font-size: 2rem;
+    }
+
+    /* Completion steps
+    *************************************/
+    .trip-design-completion {
+        display: block;
+        flex-wrap: initial;
+        justify-content: initial;
+    }
+    .trip-design-completion-step {
+        min-width: 105px;
+    }
+
+    /* Footer
+    *************************************/
+    footer > .row:first-child {
+        padding-top: 64px;
+        padding-bottom: 60px;
+    }
+
+    /* Categories
+    *************************************/
+    .medical-cats {
+        padding-top: var(--section-v-space);
+    }
+    .section-title {
+        margin-bottom: 5rem;
+    }
+    .section-title .title {
+        font-size: 3rem;
+    }
+    .section-title h3.title {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    :root {
+        --section-v-space: 120px;
+    }
+
+    /* Bootstrap helpers
+    *************************************/
+    .g-xl-6,
+    .gx-xl-6 {
+        --bs-gutter-x: 4rem;
+    }
+    .g-xl-6,
+    .gy-xl-6 {
+        --bs-gutter-y: 4rem;
+    }
+
+    /* Header
+    *************************************/
+    header .lang-holder:hover ul {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    header nav:before {
+        display: none;
+    }
+    header nav {
+        position: relative;
+        display: flex;
+        width: auto;
+        background-color: transparent;
+        border-top: 0;
+        top: initial;
+        overflow: initial;
+    }
+    body.admin-bar header nav {
+        top: initial;
+    }
+    header nav > ul {
+        border: 0;
+        height: initial;
+        flex: initial;
+        white-space: nowrap;
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+
+    #mobile-burger {
+        display: none;
+    }
+
+    header nav,
+    header nav > ul,
+    header nav > ul > li {
+        height: 100%;
+    }
+    header nav > ul > li {
+        border-bottom: 0;
+        margin: 0 20px;
+    }
+    header nav > ul > li {
+        display: inline-flex;
+    }
+    header nav > ul > li a,
+    header nav > ul > li a:focus {
+        font-size: 0.9375rem;
+        padding: 15px 0;
+    }
+    header nav > ul > li.current-menu-item:before,
+    header nav > ul > li:hover:before {
+        width: 30px;
+    }
+    header.dark nav > ul > li a,
+    header.dark nav > ul > li a:focus {
+        color: white;
+    }
+
+    header nav > ul > li.bordered a {
+        border: 1px solid var(--secondary-accent);
+        background-color: var(--secondary-accent);
+        padding-right: 35px;
+        padding-left: 35px;
+        color: white;
+        transition: all 0.35s cubic-bezier(0.7, 0, 0.3, 1);
+    }
+    header nav > ul > li.bordered:before {
+        display: none;
+    }
+    header nav > ul > li.bordered.current-menu-item a,
+    header nav > ul > li.bordered a:hover {
+        background-color: transparent;
+        color: var(--secondary-accent);
+    }
+
+    /* Submenus
+    *************************************/
+    header nav ul ul {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(5px);
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        margin-left: initial;
+        background-color: #fff;
+        padding: 10px 12px;
+        box-shadow: 0px 15px 25px 0px rgba(2, 25, 84, 0.03);
+    }
+    body.rtl header nav ul ul {
+        left: initial;
+        right: 0;
+        margin-right: initial;
+    }
+    header nav li:hover ul {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    header nav ul ul:before {
+        display: none;
+    }
+    header nav ul ul li {
+        display: block;
+    }
+    header nav ul ul li:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    header nav ul ul a,
+    header nav ul ul a:focus {
+        white-space: nowrap;
+        padding: 7px 0;
+        text-transform: initial;
+    }
+
+    /* Design your trip
+    *************************************/
+    .continue-btn {
+        margin-top: 50px;
+    }
+    .continue-btn .checkbox-container {
+        margin-top: 20px;
+    }
+    .continue-btn .cols-md-mb > [class*='col-']:not(:last-child) {
+        margin-bottom: 50px;
+    }
+
+    /* Footer
+    *************************************/
+    footer .row.copyrights ul,
+    footer .row.copyrights li {
+        margin: 0 1rem;
+    }
+
+    /* Content area
+    *************************************/
+    .content-area .img-container.small-right {
+        max-width: 230px;
+    }
+}
+
+/************************************************************
+
+    X-Large sizes
+
+*************************************************************/
+@media only screen and (min-width: 1600px) {
+    html {
+        font-size: 18px;
+    }
+}
