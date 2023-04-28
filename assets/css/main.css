@@ -663,7 +663,7 @@ header.dark #mobile-burger span {
 .banner-area.dark:before {
     content: '';
     position: absolute;
-    top: -907px;
+    top: -800px;
     right: 0;
     bottom: calc(var(--bg-effect-secondary-height) / 2 * -1);
     left: 0;
