@@ -13,3 +13,9 @@ if(isset($_POST['submit'])) {
     mail($to, $subject, $message, $headers);
 }
 ?>
+
+ <?php if(isset($_POST['submit'])) { ?>
+    <div class="col-12 validation-success">
+        <p>Thank you for your message. We'll get back to you as soon as possible.</p>
+    </div>
+<?php } ?>
