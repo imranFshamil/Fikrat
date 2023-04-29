@@ -136,15 +136,15 @@
                         <div class="row gy-4">
                             <div class="col-md-6 col-12 contact-details">
                                 <h6 class="title">Address</h6>
-                                <address>Sultan Ahmet, Atmeydanı Cd. No:7, 34122 Fatih/Istanbul, Turkey</address>
+                                <address>Balkiraz Mah./Akçadağa Sok./NO:22/2   Ankara/Mamak</address>
                             </div>
                             <div class="col-md-3 col-12 contact-details">
                                 <h6 class="title">Email</h6>
-                                <a href="mailto:email@website.com" title="Send us a message">email@website.com</a>
+                                <a href="mailto:musteriler-1@hotmail.com" title="Send us a message">musteriler-1@hotmail.com</a>
                             </div>
                             <div class="col-md-3 col-12 contact-details">
                                 <h6 class="title">Telephone</h6>
-                                <a href="tel:901234567890">+90 (123) 456 78 90</a>
+                                <a href="tel:901234567890">+90 (552) 366 65 72</a>
                             </div>
                         </div>
                     </div>
@@ -239,12 +239,18 @@
                             <div class="col-md-4 col-12 submit-container form-mt">
                                 <button type="submit" name="submit">Send</button>
                             </div>
-
+                            <?php if(isset($_POST['submit'])) { ?>
+    <div class="col-12 validation-success">
+        <p>Thank you for your message. We'll get back to you as soon as possible.</p>
+    </div>
+<?php } ?>
                             <div class="col-12 validation-errors"></div>
                         </form>
                     </div>
                 </div>
             </section>
+            
+            
 
             <footer class="onyx-container">
                 <div class="row gx-6 gy-6">
