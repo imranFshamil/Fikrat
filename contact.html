@@ -108,19 +108,7 @@
                 </div>
             </div>
                     
-                                    <form method="post" action="contact.php">
-                      <label for="name">Name:</label>
-                      <input type="text" name="name" required>
-
-                      <label for="email">Email:</label>
-                      <input type="email" name="email" required>
-
-                      <label for="message">Message:</label>
-                      <textarea name="message" required></textarea>
-
-                      <button type="submit">Send</button>
-                                        </form>
-
+                                  
 
             <!-- Google Map -->
             <section class="onyx-container section-mb bg-effect-secondary">
@@ -157,32 +145,11 @@
             </section>
 
             <!-- Call request form -->
-           <?php
-if(isset($_POST['submit'])) {
-    $to = "youremail@example.com"; // replace with your email address
-    $subject = "New form submission";
-    $message = "Full Name: " . $_POST['fullname'] . "\n"
-             . "Email: " . $_POST['email'] . "\n"
-             . "Telephone: " . $_POST['telephone'] . "\n"
-             . "Service: " . $_POST['service'] . "\n"
-             . "Message: " . $_POST['message'] . "\n";
-
-    $headers = "From: " . $_POST['email'] . "\r\n"
-             . "Reply-To: " . $_POST['email'] . "\r\n"
-             . "X-Mailer: PHP/" . phpversion();
-
-    if(mail($to, $subject, $message, $headers)) {
-        echo "<div class='alert alert-success'>Thank you for your message. We'll get back to you as soon as possible.</div>";
-    } else {
-        echo "<div class='alert alert-danger'>Sorry, something went wrong. Please try again later.</div>";
-    }
-}
-?>
-
+     
 <section class="onyx-container form-container section-mb">
     <div class="row">
         <div class="col-md-10 offset-md-1 col-12">
-            <form action="#" method="post" class="row form-container onyx-validation request-call">
+            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="row form-container onyx-validation request-call">
                 <div class="col-12 form-head">
                     <h4 class="title">Send us a message</h4>
                     <hr />
