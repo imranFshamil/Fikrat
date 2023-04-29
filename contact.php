@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
         echo '</div>';
     } else {
         // Compose email message
-        $to = "youremail@example.com"; // Enter your own email address here
+        $to = "imranshamil75@gmail.com"; // Enter your own email address here
         $subject = "New message from contact form";
         $message = "Name: $fullname\n"
                  . "Email: $email\n"
