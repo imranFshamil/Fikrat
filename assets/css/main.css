@@ -665,6 +665,7 @@ header.dark #mobile-burger span {
     position: absolute;
     top: -800px;
     right: 0;
+    padding-top: 100px;
     bottom: calc(var(--bg-effect-secondary-height) / 2 * -1);
     left: 0;
     z-index: -2;
