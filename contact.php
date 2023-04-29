@@ -1,21 +1,14 @@
-<?php
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-  $to = 'youremail@example.com';
-  $subject = 'New message from Contact Us form';
-  $message = 'Name: ' . $_POST['name'] . "\r\n\r\n";
-  $message .= 'Email: ' . $_POST['email'] . "\r\n\r\n";
-  $message .= 'Message: ' . $_POST['message'];
-
-  $headers = 'From: ' . $_POST['email'] . "\r\n" .
-             'Reply-To: ' . $_POST['email'] . "\r\n" .
-             'X-Mailer: PHP/' . phpversion();
-
-  if (mail($to, $subject, $message, $headers)) {
-    echo 'Thank you for your message. We will get back to you soon.';
-  } else {
-    echo 'Sorry, there was a problem sending your message. Please try again later.';
-  }
+<?php 
+if(isset($_POST['submit'])) {
+    $to = "imranshamil75@gmail.com"; // Add your email address here
+    $fullname = $_POST['fullname'];
+    $email = $_POST['email'];
+    $telephone = $_POST['telephone'];
+    $service = $_POST['service'];
+    $message = $_POST['message'];
+    $subject = "New Message from Company Website";
+    $message_body = "You have received a new message from the Company website:\n\nFull Name: $fullname\nEmail: $email\nTelephone: $telephone\nService: $service\nMessage: $message";
+    $headers = "From: Company Website <noreply@company.com>\r\nReply-To: $email\r\n";
+    mail($to, $subject, $message_body, $headers);
 }
-
 ?>
