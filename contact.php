@@ -1,14 +1,22 @@
-<?php 
-if(isset($_POST['submit'])) {
-    $to = "imranshamil75@gmail.com"; // Add your email address here
-    $fullname = $_POST['fullname'];
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = $_POST['name'];
     $email = $_POST['email'];
-    $telephone = $_POST['telephone'];
-    $service = $_POST['service'];
+    $subject = $_POST['subject'];
     $message = $_POST['message'];
-    $subject = "New Message from Company Website";
-    $message_body = "You have received a new message from the Company website:\n\nFull Name: $fullname\nEmail: $email\nTelephone: $telephone\nService: $service\nMessage: $message";
-    $headers = "From: Company Website <noreply@company.com>\r\nReply-To: $email\r\n";
-    mail($to, $subject, $message_body, $headers);
+    
+    // Set up the email headers and body
+    $to = 'youremail@example.com';
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    $body = "Name: $name\nEmail: $email\nSubject: $subject\nMessage:\n$message";
+    
+    // Send the email using the mail() function
+    if (mail($to, $subject, $body, $headers)) {
+        echo 'Message sent successfully!';
+    } else {
+        echo 'An error occurred. Please try again later.';
+    }
 }
 ?>
