@@ -63,51 +63,74 @@
 
 
 
-   <style>
-		form {
-		  display: flex;
-		  flex-direction: column;
-		  align-items: center;
-		  margin: 20px;
-		}
+  <style>
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 20px;
+		font-family: Arial, sans-serif;
+		background-color: #f5f5f5;
+		padding: 20px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	}
 
-		label {
-		  font-weight: bold;
-		  margin-top: 10px;
-		}
+	h1 {
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 20px;
+	}
 
-		input[type="text"],
-		input[type="email"],
-		input[type="tel"],
-		textarea {
-		  width: 100%;
-		  padding: 10px;
-		  margin: 5px 0;
-		  box-sizing: border-box;
-		  border: 2px solid #ccc;
-		  border-radius: 4px;
-		}
+	label {
+		font-weight: bold;
+		margin-top: 10px;
+		font-size: 16px;
+	}
 
-		input[type="submit"] {
-		  background-color: #4CAF50;
-		  color: white;
-		  padding: 12px 20px;
-		  border: none;
-		  border-radius: 4px;
-		  cursor: pointer;
-		}
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	textarea {
+		width: 100%;
+		padding: 10px;
+		margin: 5px 0;
+		box-sizing: border-box;
+		border: 2px solid #ccc;
+		border-radius: 4px;
+		font-size: 16px;
+	}
 
-		input[type="submit"]:hover {
-		  background-color: #45a049;
-		}
+	input[type="submit"] {
+		background-color: #4CAF50;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 16px;
+		transition: background-color 0.2s ease;
+	}
 
-		#success-message {
-		  display: none;
-		  color: green;
-		  font-weight: bold;
-		  margin-top: 20px;
-		}
-	</style>
+	input[type="submit"]:hover {
+		background-color: #45a049;
+	}
+
+	#success-message {
+		display: none;
+		color: green;
+		font-weight: bold;
+		margin-top: 20px;
+		font-size: 16px;
+	}
+
+	.error-message {
+		color: red;
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+</style>
+
 	    
 	    
 	    
@@ -339,24 +362,6 @@
                 <!-- /.row -->
 		
 
-		                                  
-<form action="https://submit-form.com/SPdGU3vE">
-	  <label for="name">Full Name</label>
-	  <input type="text" id="name" name="name" placeholder="Name" required="" />
-	  <label for="email">Email</label>
-	  <input type="email" id="email" name="email" placeholder="Email" required="" />
-	  <label for="message">Message</label>
-	  <textarea
-	    id="message"
-	    name="message"
-	    placeholder="Message"
-	    required=""
-	  ></textarea>
-	  <input type="hidden" name="_redirect" value="https://fikrat.live/contact.html" />
-	  <input type="submit" value="Send">
-	</form>
-
-
 
 
 
@@ -364,7 +369,7 @@
                     <div class="col-md-10 col-12">
                         <span>
                             ©<span class="current-year">2022</span> All Rights Reserved to
-                            <a href="index.html" title="Moria Template">FIKRAT</a>.
+                            <a href="index.html" title="fikrat Template">FIKRAT</a>.
                             <br />
                             All the images used on this website are a copyrighted personal property for to their owners.
                         </span>
@@ -375,10 +380,10 @@
                     <!-- /.col -->
                     <div class="col-md-2 col-12 onyx-logo">
                         <a
-                            href="https://onyxdev.net/"
+                            href="https:"
                             target="_blank"
                             title="Made by Onyx Web Development"
-                            class="icon-onyx-icon"
+                            class="icon"
                         ></a>
                     </div>
                     <!-- /.col -->
@@ -394,7 +399,7 @@
             // Map callback
             var map;
             function initMap() {
-                var latlng = new google.maps.LatLng(41.0043245, 28.9759674),
+                var latlng = new google.maps.LatLng(39.9124,33.0564),
                     myOptions = {
                         zoom: 14,
                         center: latlng,
