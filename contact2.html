@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <title>Contact us </title>
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+        <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+        <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#27cd7a" />
+        <link rel="shortcut icon" href="assets/images/favicons/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#27cd7a" />
+        <meta name="msapplication-config" content="assets/images/favicons/browserconfig.xml" />
+        <meta name="theme-color" content="#27cd7a" />
+
+        <!-- Open Graph -->
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Moria - Health Tourism HTML Template" />
+        <meta property="og:description" content="Minimal and clean HTML template for health and tourism websites." />
+        <meta property="og:url" content="https://moria.onyxdev.net/" />
+        <meta property="og:site_name" content="Moria" />
+        <meta property="og:image" content="https://moria.onixes.com/assets/images/social-preview.jpg" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:description" content="Minimal and clean HTML template for health and tourism websites." />
+        <meta name="twitter:title" content="Moria - Health Tourism HTML Template" />
+        <meta name="twitter:image" content="https://moria.onixes.com/assets/images/social-preview.jpg" />
+
+        <!-- Libraries/Plugins -->
+        <link href="assets/vendors/bootstrap/bootstrap-reboot.min.css" rel="stylesheet" />
+        <link href="assets/vendors/bootstrap/bootstrap-grid.min.css" rel="stylesheet" />
+        <link href="assets/vendors/bootstrap/bootstrap-utilities.min.css" rel="stylesheet" />
+        <link href="assets/vendors/owlcarousel/owl.carousel.min.css" rel="stylesheet" />
+        <link href="assets/vendors/nouislider/nouislider.min.css" rel="stylesheet" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- Icons -->
+        <link href="assets/fonts/moria-icons/style.css" rel="stylesheet" />
+
+        <!-- Main CSS -->
+        <link href="assets/dist/main.min.css" rel="stylesheet" />
+        <link href="assets/dist/responsive.min.css" rel="stylesheet" />
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <style>
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 20px;
+		font-family: Arial, sans-serif;
+		background-color: #f5f5f5;
+		padding: 20px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	h1 {
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	label {
+		font-weight: bold;
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	textarea {
+		width: 100%;
+		padding: 10px;
+		margin: 5px 0;
+		box-sizing: border-box;
+		border: 2px solid #ccc;
+		border-radius: 4px;
+		font-size: 16px;
+	}
+
+	input[type="submit"] {
+		background-color: #4CAF50;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 16px;
+		transition: background-color 0.2s ease;
+	}
+
+	input[type="submit"]:hover {
+		background-color: #45a049;
+	}
+
+	#success-message {
+		display: none;
+		color: green;
+		font-weight: bold;
+		margin-top: 20px;
+		font-size: 16px;
+	}
+
+	.error-message {
+		color: red;
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+</style>
+
+	    
+	    
+	    
+
+
+            
+    </head>
+
+    <body>
+        <main class="main watermark-dark">
+            <header class="onyx-container">
+                <div class="logo">
+                    <a href="index.html" title="Moria Health Tourism Website Template">
+                        <img src="assets/images/logo-dark.svg" alt="Moria dark logo" />
+                        <img src="assets/images/logo-light.svg" alt="Moria light logo" />
+                    </a>
+                </div>
+                <!-- /.logo -->
+
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" title="Menu item title">Home</a></li>
+                        <li><a href="medical-categories.html" title="Menu item title">Medical</a></li>
+                        <li><a href="design-your-trip-1.html" title="Menu item title">Design Your Trip</a></li>
+                        <li><a href="blog.html" title="Menu item title">Blog</a></li>
+                        <li><a href="about.html" title="Menu item title">About us</a></li>
+                        <li class="bordered current-menu-item">
+                            <a href="contact.html" title="Menu item title">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.main-nav -->
+
+                <!-- Burger -->
+                <div id="mobile-burger">
+                    <div><span></span><span></span><span></span><span></span></div>
+                </div>
+            </header>
+
+                    
+            <div class="m-4">
+                <!-- Success Alert -->
+                <div class="alert alert-success alert-dismissible fade show">
+                    <strong>Success!</strong> Your message has been sent successfully.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            
+		
+		<form action="https://submit-form.com/SPdGU3vE">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Name" required="" />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email" required="" />
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="Phone" required="" />
+      <label for="message">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Message"
+        required=""
+      ></textarea>
+      <input type="submit" value="Send">
+      <input
+        type="hidden"
+        name="_redirect"
+        value="https://www.youtube.com/watch?v=XfB_zb2gXhU"
+      />
+    </form>
+
+
+
+
+
+            
+            
+            
+            <!-- Google Map -->
+            <section class="onyx-container section-mb bg-effect-secondary">
+                <div class="row gx-5">
+                    <div class="col-12">
+                        <!-- Google map -->
+                        <div id="google-map" style="width: 100%; height: 400px"></div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </section>
+
+            <!-- Contact details -->
+            <section class="onyx-container section-mb">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 col-12">
+                        <div class="row gy-4">
+                            <div class="col-md-6 col-12 contact-details">
+                                <h6 class="title">Address</h6>
+                                <address>Balkiraz Mah./Akçadağa Sok./NO:22/2   Ankara/Mamak</address>
+                            </div>
+                            <div class="col-md-3 col-12 contact-details">
+                                <h6 class="title">Email</h6>
+                                <a href="mailto:musteriler-1@hotmail.com" title="Send us a message">musteriler-1@hotmail.com</a>
+                            </div>
+                            <div class="col-md-3 col-12 contact-details">
+                                <h6 class="title">Telephone</h6>
+                                <a href="tel:901234567890">+90 (552) 366 65 72</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </section>
+
+            
+            
+            
+            
+            
+            
+            <!-- Call request form -->
+            
+            
+            
+
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+            <footer class="onyx-container">
+                <div class="row gx-6 gy-6">
+                    <div class="col-xl-3 col-md-6 col-sm-6 col-5">
+                        <div class="widget">
+                            <h5 class="title">Menu</h5>
+
+                            <ul>
+                                <li class="current-menu-item"><a href="index.html" title="Menu item title">Home</a></li>
+                                <li><a href="medical-categories.html" title="Menu item title">Medical</a></li>
+                                <li><a href="design-your-trip-1.html" title="Menu item title">Design Your Trip</a></li>
+                                <li><a href="blog.html" title="Menu item title">Blog</a></li>
+                                <li><a href="about.html" title="Menu item title">About us</a></li>
+                                <li><a href="contact.html" title="Menu item title">Contact us</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.widget -->
+                    </div>
+                    <!-- /.col -->
+
+                    <div class="col-xl-3 col-md-6 col-sm-6 col-7">
+                        <div class="widget">
+                            <h5 class="title">Contacts</h5>
+                            <div class="contacts">
+                                <p>FIKRAT Health Tourism Website Template</p>
+                                <address>
+                                    <a href="https://www.google.com/maps" target="_blank" title="Address on map">
+                                       Balkiraz Mah./Akçadağa Sok./NO:22/2   Ankara/Mamak
+                                    </a>
+                                </address>
+                                <a href="tel:901234567890">Tel.: +90 (552) 366 65 72</a>
+                                <a href="mailto:musteriler-1@hotmail.com" title="Send us a message">musteriler-1@hotmail.com </a>
+                            </div>
+                        </div>
+                        <!-- /.widget -->
+                    </div>
+                    <!-- /.col -->
+
+                    <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+                        <div class="widget newsletter">
+                            <h6 class="title">Get our latest news</h6>
+                            <form action="">
+                                <input type="email" placeholder="Write your email address..." />
+                                <i class="icon-email"></i>
+                                <div class="checkbox-container">
+                                    <input
+                                        type="checkbox"
+                                        id="newsletter_acceptance"
+                                        name="newsletter_acceptance"
+                                        class="form-control"
+                                        checked=""
+                                    />
+                                    <label for="newsletter_acceptance">
+                                        I accept to receive e-mails from Company's website about the latest offers and
+                                        services.
+                                    </label>
+                                </div>
+                                <button class="btn-link">
+                                    Subscribe me to mailing list <i class="icon-arrow-right-tall"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <!-- /.widget -->
+                    </div>
+                    <!-- /.col -->
+
+                    <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+                        <div class="widget tel">
+                            <i class="icon-telephone"></i>
+                            <span>Call us anytime and we're ready to help</span>
+                            <a
+                                href="tel:901234567890"
+                                title="Call us anytime and we're ready to help"
+                                class="underline-effect"
+                            >
+                                +90 (552) 366 65 72
+                            </a>
+                            <span>We're here for you 24/7</span>
+                        </div>
+                        <!-- /.widget -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+		
+
+
+
+
+                <div class="row copyrights">
+                    <div class="col-md-10 col-12">
+                        <span>
+                            ©<span class="current-year">2022</span> All Rights Reserved to
+                            <a href="index.html" title="fikrat Template">FIKRAT</a>.
+                            <br />
+                            All the images used on this website are a copyrighted personal property for to their owners.
+                        </span>
+                        <ul>
+                            <li><a href="#">Read Our Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-2 col-12 onyx-logo">
+                        <a
+                            href="https:"
+                            target="_blank"
+                            title="Made by Onyx Web Development"
+                            class="icon"
+                        ></a>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </footer>
+        </main>
+
+        <!-- Google Map -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
+
+        <script>
+            // Map callback
+            var map;
+            function initMap() {
+                var latlng = new google.maps.LatLng(39.9124,33.0564),
+                    myOptions = {
+                        zoom: 14,
+                        center: latlng,
+                        disableDefaultUI: false,
+                        scaleControl: false,
+                        panControl: false,
+                        streetViewControl: false,
+                        styles: [],
+                        mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    };
+
+                map = new google.maps.Map(document.getElementById('google-map'), myOptions);
+
+                var image = new google.maps.MarkerImage(
+                    'assets/images/map-pin.png',
+                    null,
+                    null,
+                    null,
+                    new google.maps.Size(40, 61),
+                );
+                var marker = new google.maps.Marker({
+                    map: map,
+                    icon: image,
+                    position: map.getCenter(),
+                });
+
+                var contentString = 'Balkiraz Mah./Akçadağa Sok./NO:22/2   Ankara/Mamak';
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                });
+
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });
+            }
+        </script>
+
+        <!-- Scripts -->
+        <script src="assets/vendors/jquery-3.6.0.min.js"></script>
+        <script src="assets/vendors/owlcarousel/owl.carousel.min.js"></script>
+        <script src="assets/vendors/bootstrapValidator.min.js"></script>
+        <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+        <script src="assets/dist/main.min.js"></script>
+    </body>
+</html>
