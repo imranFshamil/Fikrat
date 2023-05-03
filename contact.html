@@ -173,19 +173,27 @@
                     
 		
 		
-		<form action="https://submit-form.com/SPdGU3vE" method="post" id="myForm">
-	  <label for="name">Full Name</label>
-	  <input type="text" id="name" name="name" placeholder="Name" required="" />
-	  <label for="email">Email</label>
-	  <input type="email" id="email" name="email" placeholder="Email" required="" />
-	  <label for="phone">Phone Number</label>
-	  <input type="tel" id="phone" name="phone" placeholder="Phone Number" required="" />
-	  <label for="message">Message</label>
-	  <textarea id="message" name="message" placeholder="Message" required=""></textarea>
-	  <input type="submit" value="Send">
-	</form>
-
-	<p id="success-message"></p>
+		<form action="https://submit-form.com/SPdGU3vE">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Name" required="" />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email" required="" />
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="Phone" required="" />
+      <label for="message">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Message"
+        required=""
+      ></textarea>
+      <input type="submit" value="Send">
+      <input
+        type="hidden"
+        name="_redirect"
+        value="https://www.youtube.com/watch?v=XfB_zb2gXhU"
+      />
+    </form>
 
 
 
@@ -415,28 +423,6 @@
                 });
             }
         </script>
-
-<script>
-		const form = document.getElementById('myForm');
-		const successMessage = document.getElementById('success-message');
-
-		form.addEventListener('submit', (event) => {
-		  event.preventDefault();
-		  fetch(event.target.action, {
-		    method: form.method,
-		    body: new FormData(form)
-		  })
-		  .then(response => {
-		    successMessage.style.display = 'block';
-		    successMessage.textContent = 'Form submission successful!';
-		    form.reset();
-		  })
-		  .catch(error => {
-		    successMessage.style.display = 'block';
-		    successMessage.textContent = 'Form submission failed!';
-		  });
-		});
-	</script>
 
         <!-- Scripts -->
         <script src="assets/vendors/jquery-3.6.0.min.js"></script>
