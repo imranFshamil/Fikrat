@@ -1414,7 +1414,7 @@ iframe {
 
 /* For screens up to 600px */
 @media only screen and (max-width: 600px) {
-    .dropdown {
+    .dropdownxy {
       left: 77%;
       top: 40%;
     }
@@ -1422,14 +1422,14 @@ iframe {
   
   /* For screens between 600px and 700px */
   @media only screen and (min-width: 600px) and (max-width: 700px) {
-    .dropdown {
+    .dropdownxy {
       left: 61%;
       top: 0%;
     }
   }
   /* For screens between 700px and 800px */
   @media only screen and (min-width: 700px) and (max-width: 800px) {
-    .dropdown {
+    .dropdownxy {
       left: 65%;
       top: 0%;
     }
@@ -1437,7 +1437,7 @@ iframe {
 
   /* For screens between 800px and 900px */
   @media only screen and (min-width: 800px) and (max-width: 900px) {
-    .dropdown {
+    .dropdownxy {
       left: 69%;
       top: 0%;
     }
@@ -1445,7 +1445,7 @@ iframe {
 
   /* For screens between 900px and 1000px */
   @media only screen and (min-width: 900px) and (max-width: 1000px) {
-    .dropdown {
+    .dropdownxy {
       left: 72%;
       top: 0%;
     }
@@ -1453,14 +1453,14 @@ iframe {
 
   /* For screens between 1000px and 1100px */
   @media only screen and (min-width: 1000px) and (max-width: 1100px) {
-    .dropdown {
+    .dropdownxy {
       left: 74%;
       top: 0%;
     }
   }
   /* For screens between 1100px and 1200px */
   @media only screen and (min-width: 1100px) and (max-width: 1200px) {
-    .dropdown {
+    .dropdownxy {
       left: 79%;
       top: 0%;
     }
@@ -1468,27 +1468,27 @@ iframe {
 
   /* For screens between 1200px and 1300px */
   @media only screen and (min-width: 1200px) and (max-width: 1300px) {
-    .dropdown {
+    .dropdownxy {
         left: 81%;
         top: 0%;
     }
   }
  /* For screens between 1300px and 1400px */
  @media only screen and (min-width: 1300px) and (max-width: 1400px) {
-    .dropdown {
+    .dropdownxy {
         left: 82%;
         top: 0%;
     }
   } /* For screens between 1400px and 1500px */
   @media only screen and (min-width: 1400px) and (max-width: 1500px) {
-    .dropdown {
+    .dropdownxy {
         left: 84%;
         top: 0%;
     }
   }
   /* For screens between 1500px and 1600px */
   @media only screen and (min-width: 1500px) and (max-width: 1600px) {
-    .dropdown {
+    .dropdownxy {
         left: 1110px;
         top: 1%;
     }
@@ -1496,14 +1496,14 @@ iframe {
   
   /* For screens above 1600px */
   @media only screen and (min-width: 1600px) {
-    .dropdown {
+    .dropdownxy {
       left: 1110px;
       top: 1%;
     }
   }
   
   /* Common styles for all screen sizes */
-  .dropdown {
+  .dropdownxy {
     display: block;
     width: 22px;
     height: 2px;
@@ -1514,7 +1514,7 @@ iframe {
     transition: all 0.5s ease-in-out;
   }
   
-  .dropdown a {
+  .dropdownxy a {
     display: block;
     margin: 9px 0 0 0;
     padding: 0;
@@ -1557,7 +1557,7 @@ iframe {
     color: white;
   }
   
-  .dropdown-content {
+  .dropdownxy-content {
     display: none;
     position: absolute;
     z-index: 1;
@@ -1567,19 +1567,19 @@ iframe {
     left: -10px;
   }
   
-  .dropdown:hover .dropdown-content {
+  .dropdownxy:hover .dropdownxy-content {
     display: block;
     background-color: transparent;
   }
   
-  .dropdown-content a {
+  .dropdownxy-content a {
     color: rgb(255, 255, 255);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
-  .dropdown-content a:hover {
+  .dropdownxy-content a:hover {
     background-color: #000000;
   }
   
