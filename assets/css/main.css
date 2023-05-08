@@ -710,6 +710,7 @@ header.dark #mobile-burger span {
     margin-bottom: 0;
     font-size: 1.75rem;
     line-height: 1.45;
+    padding-right: 40px;
 }
 .banner-area.image .content > :not(:first-child) {
     margin-top: 20px;
