@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-
 <html lang="en-GB">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-        <!-- Viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
-        <title>Contact us </title>
+        <title>FIKRAT</title>
 
         <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
         <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
-        <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#27cd7a" />
+        <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#f797c3" />
         <link rel="shortcut icon" href="assets/images/favicons/favicon.ico" />
-        <meta name="msapplication-TileColor" content="#27cd7a" />
+        <meta name="msapplication-TileColor" content="#4045f7" />
         <meta name="msapplication-config" content="assets/images/favicons/browserconfig.xml" />
-        <meta name="theme-color" content="#27cd7a" />
+        <meta name="theme-color" content="#4045f7" />
 
          <!-- Open Graph -->
         <meta property="og:locale" content="en_GB" />
@@ -27,14 +24,14 @@
         <meta property="og:description" content="Health tourism consultancy." />
         <meta property="og:url" content="https://Fikrat.live" />
         <meta property="og:site_name" content="Fikrat" />
-        <meta property="og:image" content="https://fikratturizm.com/assets/images/social-preview.jpg" />
+        <meta property="og:image" content="https://fikrat.live/assets/images/social-preview.jpg">
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:description" content="health and tourism consultancy." />
         <meta name="twitter:title" content="Fikrat - Health Tourism consultancy" />
-        <meta name="twitter:image" content="https://fikratturizm.com/assets/images/social-preview.jpg" />
+        <meta name="twitter:image" content="https://fikrat.live/assets/images/social-preview.jpg" />
 
         <!-- Libraries/Plugins -->
         <link href="assets/vendors/bootstrap/bootstrap-reboot.min.css" rel="stylesheet" />
@@ -42,7 +39,7 @@
         <link href="assets/vendors/bootstrap/bootstrap-utilities.min.css" rel="stylesheet" />
         <link href="assets/vendors/owlcarousel/owl.carousel.min.css" rel="stylesheet" />
         <link href="assets/vendors/nouislider/nouislider.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -51,8 +48,6 @@
             href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
             rel="stylesheet"
         />
-	        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
 
         <!-- Icons -->
         <link href="assets/fonts/moria-icons/style.css" rel="stylesheet" />
@@ -60,11 +55,8 @@
         <!-- Main CSS -->
         <link href="assets/dist/main.min.css" rel="stylesheet" />
         <link href="assets/dist/responsive.min.css" rel="stylesheet" />
-
-
-
-
- <style>
+    
+        <style>
 
 
 /* For screens up to 500px */
@@ -223,7 +215,8 @@ z-index: 999;
 z-index: 999;
   }
   
-  	
+ 
+		
 		 .layer3 {
     height: 40px;
     width: 40px;
@@ -233,41 +226,60 @@ z-index: 999;
     z-index: 999;
 
   }
-	
+		
+		
+		
   
   .fa-language {
     color: black;
   }
   
-  .dropdownxy-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background-color: #1ba816;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    left: -10px;
-  }
-  
-  .dropdownxy:hover .dropdownxy-content {
-    display: block;
-    background-color: transparent;
-  }
-  
-  .dropdownxy-content a {
-                color:#000000;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdownxy-content a:hover {
-    background-color: #000000;
-  }
+ .dropdownxy-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #1ba816;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  left: -10px;
+}
+
+.dropdownxy.active .dropdownxy-content {
+  display: block;
+  background-color: transparent;
+}
+
+.dropdownxy-content a {
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownxy-content a:hover {
+  background-color: #000000;
+}
 
 
 
-</style> 
+
+
+
+
+</style>
+
+
+
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var dropdown = document.querySelector(".dropdownxy");
+
+      dropdown.addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    });
+  </script>
 	    
 	    
   <style>
