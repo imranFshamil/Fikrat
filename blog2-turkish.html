@@ -24,14 +24,14 @@
         <meta property="og:description" content="Health tourism consultancy." />
         <meta property="og:url" content="https://Fikrat.live" />
         <meta property="og:site_name" content="Fikrat" />
-        <meta property="og:image" content="https://fikratturizm.com/assets/images/social-preview.jpg" />
+        <meta property="og:image" content="https://fikrat.live/assets/images/social-preview.jpg">
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:description" content="health and tourism consultancy." />
         <meta name="twitter:title" content="Fikrat - Health Tourism consultancy" />
-        <meta name="twitter:image" content="https://fikratturizm.com/assets/images/social-preview.jpg" />
+        <meta name="twitter:image" content="https://fikrat.live/assets/images/social-preview.jpg" />
 
         <!-- Libraries/Plugins -->
         <link href="assets/vendors/bootstrap/bootstrap-reboot.min.css" rel="stylesheet" />
@@ -56,7 +56,7 @@
         <link href="assets/dist/main.min.css" rel="stylesheet" />
         <link href="assets/dist/responsive.min.css" rel="stylesheet" />
     
-         <style>
+        <style>
 
 
 /* For screens up to 500px */
@@ -234,36 +234,52 @@ z-index: 999;
     color: black;
   }
   
-  .dropdownxy-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background-color: #1ba816;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    left: -10px;
-  }
-  
-  .dropdownxy:hover .dropdownxy-content {
-    display: block;
-    background-color: transparent;
-  }
-  
-  .dropdownxy-content a {
-    color: rgb(255, 255, 255);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdownxy-content a:hover {
-    background-color: #000000;
-  }
+ .dropdownxy-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #1ba816;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  left: -10px;
+}
+
+.dropdownxy.active .dropdownxy-content {
+  display: block;
+  background-color: transparent;
+}
+
+.dropdownxy-content a {
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownxy-content a:hover {
+  background-color: #000000;
+}
+
+
+
+
 
 
 
 </style>
 
+
+
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var dropdown = document.querySelector(".dropdownxy");
+
+      dropdown.addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    });
+  </script>
 
     </head>
 
