@@ -24,14 +24,14 @@
         <meta property="og:description" content="Health tourism consultancy." />
         <meta property="og:url" content="https://Fikrat.live" />
         <meta property="og:site_name" content="Fikrat" />
-        <meta property="og:image" content="https://fikratturizm.com/assets/images/social-preview.jpg">
+        <meta property="og:image" content="https://fikrat.live/assets/images/social-preview.jpg">
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:description" content="health and tourism consultancy." />
         <meta name="twitter:title" content="Fikrat - Health Tourism consultancy" />
-        <meta name="twitter:image" content="https://fikratturizm.com/assets/images/social-preview.jpg" />
+        <meta name="twitter:image" content="https://fikrat.live/assets/images/social-preview.jpg" />
 
         <!-- Libraries/Plugins -->
         <link href="assets/vendors/bootstrap/bootstrap-reboot.min.css" rel="stylesheet" />
@@ -175,7 +175,7 @@
     height: 2px;
     margin-top: -1px;
     position: absolute;
-    background-color: transparent;
+    background-color: #000000;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 z-index: 999;
@@ -234,35 +234,57 @@ z-index: 999;
     color: black;
   }
   
-  .dropdownxy-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background-color: #1ba816;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    left: -10px;
-  }
-  
-  .dropdownxy:hover .dropdownxy-content {
-    display: block;
-    background-color: transparent;
-  }
-  
-  .dropdownxy-content a {
-    color: rgb(255, 255, 255);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdownxy-content a:hover {
-    background-color: #000000;
-  }
+.dropdownxy-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: black; /* Change the background color to black */
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  left: -10px;
+}
+
+.dropdownxy.active .dropdownxy-content {
+  display: block;
+  background-color: #e5f4fb;
+}
+
+.dropdownxy-content a {
+  color: #1f0734; /* Change the text color to black */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownxy-content a:hover {
+  background-color: #000000;
+  color: #FFFFFF; /* Change the text color on hover to white */
+}
+
+
+
+
+
 
 
 
 </style>
+
+
+
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var dropdown = document.querySelector(".dropdownxy");
+
+      dropdown.addEventListener("click", function() {
+        this.classList.toggle("active");
+      });
+    });
+  </script>
+
+
+
 
 
     </head>
@@ -710,7 +732,7 @@ expériences numériques.
                                 <p>FIKRAT</p>
                                 <address>
                                     <a href="https://www.google.com/maps" target="_blank" title="Address on map">
-                                        Balkiraz Mah./Akçadağa Sok./NO:22/2   Ankara/Mamak
+                                        KIZILIRMAK MAH. DUMLUPINAR BLV. Kapı No:3 C-1 Daire No:160 ÇANKAYA ANKARA
                                     </a>
                                 </address>
                                 <a href="tel:905523666572">Tel.: +90 (552) 366 65 72</a>
